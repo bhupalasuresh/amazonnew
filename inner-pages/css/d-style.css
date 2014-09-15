@@ -1,0 +1,383 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	font-family:Arial, Helvetica, sans-serif;
+	margin:0px;
+	padding:0px;	
+}
+.computer-main-page{
+	width:100%;
+	float:left;	
+}
+.lft-side-role{
+	float:left;
+	width:225px;
+	min-height:300px;
+	border-right:1px solid #dddddd;
+	margin-left:10px;
+	margin-right:5px;	
+}
+.leftside-nav{
+	width:220px;
+	float:left;
+	height:auto;
+	margin:0px;
+	padding:0px;	
+}
+.leftside-nav p{
+	text-align:left;
+	font-size:13px;
+	color:#e47911;	
+	float:left;
+	font-weight:bold;
+	margin:0px;
+	padding:10px 0px 0px 0px;
+	width:100%;	
+}
+.leftside-nav ul{
+	margin:0px;
+	padding:0px;
+	width:90%;
+	float:left;
+	margin:0px 0px 10px 15px;	
+}
+.leftside-nav li{
+	list-style:none;
+	padding:0px 0px;
+	display:inline-block;
+	float:left;
+	width:100%;
+	margin:0px;
+}
+.leftside-nav li a{
+	text-decoration:none;
+	text-align:left;
+	font-size:13px;
+	color:#666;
+	float:left;
+	line-height:24px;
+}
+.leftside-nav li a:hover{
+	color:#555;
+}
+
+.center-main-page{
+	width:1075px;
+	float:left;
+	margin:0px 0px 30px;
+	padding:0px;
+	min-height:300px;	
+}
+.center-main-page h1{
+	float:left;
+	font-size:15px;
+	font-weight:bold;
+	text-align:left;
+	color:#12518f;
+	width:100%;
+	margin:10px 0px;
+	padding:0px;
+}
+.center-main-page h1 span img{
+	line-height:16px;
+	text-align:center;
+	margin:4px 5px 0px;
+}
+.center-main-page h1 span span{
+	line-height:16px;
+	text-align:left;
+	color:#bf6b27;
+	border-bottom:1px dashed #555;
+}
+
+
+.center-main-page h3{
+	float:left;
+	font-size:14px;
+	font-weight:bold;
+	text-align:left;
+	color:#12518f;
+	width:100%;
+	margin:10px 0px;
+	padding:0px;
+}
+.center-main-page h3 span{
+	font-size:13px;
+	font-weight:normal;
+	border-bottom:1px solid #555;
+}
+.search-results{
+	width:100%;
+	height:35px;
+	float:left;
+	background:#eeeeee;	
+}
+.search-results p{
+	text-align:left;
+	font-size:13px;
+	color:#333;	
+	float:left;
+	margin:0px;
+	padding:0 0 0 5px;
+	line-height:35px;	
+}
+.search-results .imgcls{
+	line-height:30px;
+	font-size:13px;
+	color:#888888;
+	margin-left:20px;
+	float:left;	
+}
+.search-results .imgcls p.img-cls img{
+	line-height:35px;
+	padding:5px;
+	float:left;
+}
+.search-results p.img-cls span{
+	line-height:35px;
+	padding:5px;
+}
+.search-results p.pagenation{
+	float:left;
+	font-size:13px;
+	color:#888888;
+	margin-left:300px;
+}
+.search-results p.lft-rgt-ftr-arrow{
+	float:left;
+	padding:0px;
+	margin:0px 5px;
+	line-height:35px;
+}
+.search-results p.lft-rgt-ftr-arrow img{
+	line-height:35px;
+}
+.sortbyrelavent{
+	float:left;
+	line-height:35px;
+	font-size:13px;
+	margin-left:400px;	
+	color:#888888;
+}
+.sortbyrelavent select{
+	width:180px;
+	height:24px;
+	padding:2px 0px 2px 5px;
+	background:#f1f1f1;	
+	cursor:pointer;
+	color:#888888;
+	border:1px solid #ccc;
+}
+.sortbyrelavent option{
+	padding:2px 0px 2px 5px;
+	background:#f1f1f1;	
+	cursor:pointer;
+	color:#888888;
+}
+.laptop-main{
+	float:left;	
+	width:840px;
+	margin:10px 0px 20px;
+}
+.laptop-display{
+	float:left;
+	width:840px;	
+	margin:20px 0 0 0;
+	padding:0px;
+}
+.laptop-display-inner{
+	float:left;
+	width:265px;
+	min-height:300px;	
+}
+.laptop-display-inner .laptop-icon{
+	text-align:left;
+	float:left;
+	width:167px;
+	height:130px;
+	margin:0px;
+	padding:0px;
+}
+
+.laptop-display p{
+	float:left;
+	font-size:13px !important;
+	line-height:18px;
+	text-align:left;
+	color:#888888;
+	width:100%;
+	margin:2px 0px;
+	padding:0px;
+}
+.laptop-display p span{
+
+}
+.laptop-display p span span{
+	font-weight:bold;
+	color:#8b211a;
+	font-size:14px !important;
+}
+.laptop-display p span.stright-line{
+	text-decoration:line-through;
+}
+.laptop-display p.font-sm-size{
+	font-size:12px !important;
+}
+.laptop-display p.font-md-size{
+	font-size:13px !important;
+	font-weight:bold;
+}
+.laptop-display p.font-sm-size span{
+	color:#418100;	
+	font-weight:bold;
+	font-size:12px !important;
+}
+.laptop-display p.font-sm-size span span{
+	color:#888888;	
+	font-weight:bold;
+	font-size:12px !important;
+}
+.laptop-display p.dark-colrs{
+	color:#333;
+}
+.laptop-display p span.blue-colrs{
+	color:#105194;
+}
+.laptop-display p span.blue-colrs{
+	color:#105194;
+}
+.laptop-display p span.gray-colr{
+	color:#888888;
+	font-weight:bold;
+}
+.laptop-display ul{
+	margin:0px 0px 0px 20px;
+	padding:0px;
+	float:left;
+}
+.laptop-display li{
+	list-style:disc;
+	padding:0px;
+	margin:0px;
+	line-height:18px;
+	font-size:12px;
+	color:#888888;
+}
+
+.sponsored{
+	float:left;
+	width:234px;
+	height:300px;	
+}
+.sponsored fieldset{
+	font-size:14px;
+	color:333;
+	border:1px solid #dddddd;
+	margin-top:15px;
+}
+.sponsored legend{
+	padding:0px 5px;
+}
+.sponsored ul{
+	float:left;
+	margin:0px;
+	padding:0px;
+}
+.sponsored li{
+	width:210px;
+	height:auto;
+	list-style:none;
+	font-size:12px;
+	color:#0753a6;
+	float:left;	
+	line-height:18px;
+	padding:5px 0px;
+	margin:0px;
+}
+.sponsored li span{
+	width:82px;
+	height:59;
+	float:left;	
+	list-style:none;
+	margin:0px;
+	padding:0px;	
+}
+.sponsored li span.font-colr{
+	color:#8b211a;
+	float:left;
+	width:auto;
+	height:auto;
+}
+
+.recommendations{
+	width:1400px;
+	margin:0 auto;
+	height:200px;
+	border:1px solid #ccc;	
+}
+.dell-main{
+	width:100%;
+	float:left;	
+}
+.dell-main-page{
+	width:1260px;
+	margin:0 auto;
+	min-height:400px;
+	/*background:#f00;*/
+}
+.dell-lft{
+	float:left;
+	width:500px;
+}
+.dell-lft ul{
+	float:left;
+	margin:20px 0 0 0;
+	padding:0px;
+	width:50px;	
+}
+.dell-lft li{
+	float:left;
+	width:47px;	
+	height:47px;
+	margin:0px;
+	padding:0px;	
+}
+.dell-lft .roll-over{
+	float:left;	
+	margin:20px 0 0 0;
+	padding:0px;
+	width:270px;
+	height:260px;
+}
+.dell-lft-content{
+	float:left;
+	width:520px;	
+}
+.dell-lft-content h1{
+	width:520px;
+	float:left;
+	font-size:24px;
+	font-weight:normal;
+	text-align:left;
+	color:#333;
+}
+.dell-lft-content h1 span{
+	font-size:14px;
+	color:#333;
+}
+.dell-lft-content h1 span span{
+	color:#416ebe;
+}
+.dell-mid{
+	float:left;
+	width:600px;	
+}
+.dell-rgt{
+	float:left;
+	width:260px;	
+}
+.btm-line{
+	width:520px;
+	height:1px;
+	background:#f1f1f1;	
+}

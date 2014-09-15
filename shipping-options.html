@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shipping Options</title>
+
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+localStorage.currentpage=window.location;
+$(document).ready(function() {
+			if(localStorage.getItem('signinid')==null)
+			{
+				window.location="signin.html";
+			}
+});
+</script>
+</head>
+
+<body>
+<div id="wrpapper">
+
+	<!-- Header Start -->
+	<div class="header">
+    	<div class="signin-logo"><img src="images/logo.png" align="left" border="0" alt="Logo" title="Logo" /></div>
+            
+        <div class="nav">
+            	<ul>
+                	<li><a href="signin.html">Signin</a></li>
+                    <li><a class="active" href="#">Shipping & Payment</a></li>
+                    <li><a href="#">Gift Options</a></li>
+                    <li><a href="#">Place Order</a></li>
+                </ul>
+            </div>
+        
+    </div>
+    <!-- Header End -->
+    
+    
+	<!-- Shipping Address Start -->
+    <div class="shipping-addres">
+    	<h2>Choose your shipping options
+        <a href="payment-method.html" class="continue-btn">Continue</a></h2>
+        
+       
+    </div>
+    <!-- Shipping Address End -->
+    
+    
+    
+    
+    <div class="shipping-optns" style="border-bottom:1px solid #cdcdcd; padding-bottom:30px; margin-bottom:30px;">
+    
+    	<div class="shipping-optns-lft">
+        	<h4>Shippment 1 of 1</h4>
+            <h5>Shipping from BESTDEAL TECH (<span>Learn more</span>)</h5>
+            
+            <p>Shipping to: Prathik Gadde, 719 Indian Ave Ste 319, Indianpolis, IN, 462026149, United State</p>
+            <ul>
+            	<li>Dell Inspiration 15z Ultrabook with Touch Screen/Intel Core i5 3337U/6GB RAM / 500GB HDD + 32GB SSD / backlit keyboard / Intel HD 4400 / 6 cell battelry / webcam / WiFi / HDMI / Bluetooth / Windows 8 / Moon Silver</li>
+                <li><span style="color:#e47911;">$649.99</span> <span style="color:#666;">Quantity : 1</span></li>
+                <li>Sold By : BESTDEAL TECH</li>
+                <li style="color:#2f80b6;">Change Quantity or Delete</li>
+            </ul>
+        </div>
+        
+        <div class="shipping-optns-rht">
+        	<h5>Choose a shipping speed</h5>
+            <ul>
+            	<li><input style="margin-right:5px;" name="xxx" type="radio" value="" checked/>Standard (3-5 business days)</li>
+                <li><input name="xxx" type="radio" value="" style="margin-right:5px;" />Two Days shipping (2 business days)</li>
+                <li><input name="xxx" type="radio" value="" style="margin-right:5px;" />Expedited (1-3 business days)</li>
+                <li><input name="xxx" type="radio" value="" style="margin-right:5px;" />One day shipping (1 business day)</li>
+            </ul>
+        </div>
+        	
+	</div>
+    
+    <a href="payment-method.html" class="continue-btn">Continue</a>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

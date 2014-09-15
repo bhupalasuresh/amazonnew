@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Place Order</title>
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+localStorage.currentpage=window.location;
+$(document).ready(function() {
+	var string123='';
+	var totalcost=0;
+			if(localStorage.getItem('signinid')==null)
+			{
+				window.location="signin.html";
+			}
+			if(localStorage.getItem('productcart')!=null)
+			{
+				
+				var productcart=JSON.parse(localStorage.productcart);
+				
+				for (productid in productcart) {
+					string123+='<div style="float : left; width : 100%; margin : 10px 0 0 0;"><div class="estimated-shipping" style="width: 480px;"><h4>Estimated shipping: Aug. 3, 2014 - Aug. 4, 2014</h4><img src="'+productcart[productid].image+'" style="float:left;" width="150" height="150"/><p>'+productcart[productid].name+'<br /><span style="width:100%; float:left;color:#e47911;">$'+productcart[productid].price+'<br />only 2 left in stock.</span><span style="width:100%; float:left;"><strong>Quantity:</strong> '+productcart[productid].qty+' <small class="small">change</small></span><span class="estimated-shipping-span">Sold by : BESTDEAL TECH</span><span>gift options not available.</span></p></div><div class="choose-a-shipping-speed"><h5>Choose a speed:</h5><ul><li><input name="xxxx'+productid+'" type="radio" value="" checked/>Standard (3-5 business days)</li><li><input name="xxxx'+productid+'" type="radio" value="" />Two days shipping (2 business days)</li><li><input name="xxxx'+productid+'" type="radio" value="" />Expedited (1-3 business days)</li><li><input name="xxxx'+productid+'" type="radio" value="" />One day shipping (1 business day)</li></ul></div></div>';
+					totalcost+=(productcart[productid].price*productcart[productid].qty);
+				}
+				$('#totalorderdetails').html(string123);
+				$('#totalcost11').html('<span>Items:</span>$'+totalcost);
+				$('#totalcost13').html('<span>Total Before Tax:</span>$ '+totalcost);
+				$('#totalcost14').html('<span>Total:</span>$'+totalcost);
+				$('#totalcost15').html('<span class="order-total">Order Total:</span>$'+totalcost);
+				//$('#totalcost,#totalcost1').html('Subtotal ('+items+' item): <span>$ '+(totalcost+'')+'</span>');
+			}
+});
+</script>
+<script src="js/ourscript.js"></script>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="wrpapper">
+
+	<!-- Header Start -->
+	<div class="header">
+    	<div class="signin-logo"><img src="images/logo.png" align="left" border="0" alt="Logo" title="Logo" /></div>
+            
+        <div class="nav">
+            	<ul>
+                	<li><a href="signin.html">Signin</a></li>
+                    <li><a href="#">Shipping & Payment</a></li>
+                    <li><a href="#">Gift Options</a></li>
+                    <li><a class="active" href="place-order.html">Place Order</a></li>
+                </ul>
+            </div>
+        
+    </div>
+    <!-- Header End -->
+    
+    
+	<!-- Shipping Address Start -->
+    <div class="shipping-addres">
+    	<h2>Review your order</h2>
+    </div>
+    <!-- Shipping Address End -->
+    
+    <p>By placing your order, you agree to Webnextar.com's privacy notice and conditions of use.</p>
+    
+    <div class="place-order-lft">
+    <div class="billing-addrs">
+    
+    	<div class="place-addrs">
+        	<p><strong>Shipping address</strong><br />
+Prathik Gadde<br />
+719 Indian Ave Ste 319<br />
+Indianpolis, IN 46202-6149<br />
+United States<br />
+Phone: 9802542922<span>Change</span></p>
+        </div>
+        
+        <div class="place-addrs">
+        	<p><strong>Payment Method</strong><br />
+<img src="images/visa-card-icon.png" style="margin-right:5px; margin-top:3px;" alt="" title="" align="left" border="0" />endind in 5069<br />
+Gift certificate / Card<span>Change</span></p>
+<p><strong>Billing Address</strong><br />
+Same as shipping address <span>Change</span></p>
+        </div>
+        
+        <div class="place-addrs">
+        	<p><strong>Gift cards & Promotional Codes</strong><br />
+<input name="" type="text" placeholder="Enter Code" class="enter-code-input" /><a class="apply-btn" href="#">Apply</a></p>
+
+        </div>
+    
+    </div>	
+    
+    <div class="get-thirty-ofr" id="totalorderdetails">
+        	
+            
+            
+        </div>
+        
+        </div>
+    
+    <div class="place-order-rht">
+        
+       <div class="order-summary">
+       
+   		<a href="#" class="continue-btn1" style="margin-left:8px !important; margin-top:10px !important; float:left;">Place your order</a>
+        
+        <ul>
+        	<li id="totalcost11"><span>Items:</span>$0.00</li>
+            <li style="border-bottom:1px solid #cdcdcd; padding-bottom:5px;"><span>Shipping & Handling:</span>$0.00</li>
+            <li id="totalcost13"><span>Total Before Tax:</span>$0.0</li>
+            <li><span>Estimated tax to be collected*:</span>$0.00</li>
+            <li id="totalcost14"><span>Total:</span>$0.0</li>
+            <li class="order-total" style="border-bottom:2px solid #cdcdcd;" id="totalcost15"><span class="order-total">Order Total:</span>$0.0</li>
+            
+            <p class="order-total-p">How are shipping costs calculated?</p>
+            
+        </ul>
+       
+       </div>
+       
+   </div>
+   
+   
+   
+   <p class="order-total-p-bottom-text">*Why has sales tax been applied? <span>See tax and seller information</span><br />
+Do you need help? Explore our <span>Help Pages</span> or <span>contact us</span><br />
+For an item sold by Webnextar.com: When you click the “Place yopur order” button, we’ll send you an email message acknowledging receipt of your order. Your contract to purchase an item will not be complete until we send you an email notifying you that the item has been shipped.<br />
+Colorado, Pklahoma, South Dakota and Vermont Purchasers: <span>Important information regarding sales tax you may owe in your State</span><br />
+Within 30 days of delivery, you may return new, unopened merchandise in its original condition. Exceptions and restrictions apply. See Webnextar.com’s <span>Returns Policy</span><br />
+Go to the <span>Webnextar.com homepage</span> without completing your order.</p>
+    
+    
+        
+        
+    
+  
+
+</div>
+</body>
+</html>

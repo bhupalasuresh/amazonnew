@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Payment Method</title>
+
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+localStorage.currentpage=window.location;
+$(document).ready(function() {
+			if(localStorage.getItem('signinid')==null)
+			{
+				window.location="signin.html";
+			}
+});
+</script>
+<script src="js/ourscript.js"></script>
+
+</head>
+
+<body>
+<div id="wrpapper">
+
+	<!-- Header Start -->
+	<div class="header">
+    	<div class="signin-logo"><img src="images/logo.png" align="left" border="0" alt="Logo" title="Logo" /></div>
+            
+        <div class="nav">
+            	<ul>
+                	<li><a href="signin.html">Signin</a></li>
+                    <li><a class="active" href="#">Shipping & Payment</a></li>
+                    <li><a href="#">Gift Options</a></li>
+                    <li><a href="#">Place Order</a></li>
+                </ul>
+            </div>
+        
+    </div>
+    <!-- Header End -->
+    
+	<!-- Shipping Address Start -->
+    <div class="shipping-addres">
+    	<h2>Select a payment method</h2>
+    </div>
+    <!-- Shipping Address End -->
+    
+    <div class="get-ofr">
+    	<p><a href="#">Get 30$ off</a> Prathik, your cost could be <strong>$ 563.79 insted of 593.79</strong>! get the <strong>webnextar.com Rewards Visa</strong> card and you'll  <strong>automatically get  $ 30.00</strong> off instantly as a gift card.</p>
+    </div>
+    
+    
+    <div class="payment-method-left">
+    <div class="cards-details">
+    	
+        <div class="card-details-heading">
+            	<h5>Your credit and debit cards</h5>
+                <h6>Name on card</h6>
+                <span>Expires on</span>
+            </div>
+            
+        <ul>
+        	<li><a href="#"><input name="xxx" type="radio" value="" style="margin:3px 5px 0 5px; float:left;" /><img src="images/visa-card-icon.png" align="left" border="0" /><span class="cards-details-lft"><strong>Visa</strong> ending in 5069</span> <span class="cards-details-mdl">Prathik Gadde</span><span class="cards-details-rht">03/2017</span></a></li>
+            
+            <li><a href="#"><input name="xxx" type="radio" value="" style="margin:3px 5px 0 5px; float:left;" /><img src="images/visa-card-icon.png" align="left" border="0" /><span class="cards-details-lft"><strong>Visa</strong> ending in 5069</span> <span class="cards-details-mdl">Prathik Gadde</span><span class="cards-details-rht">03/2017</span></a></li>
+            
+            <li><a href="#"><input name="xxx" type="radio" value="" style="margin:3px 5px 0 5px; float:left;" /><img src="images/visa-card-icon.png" align="left" border="0" /><span class="cards-details-lft"><strong>Visa</strong> ending in 5069</span> <span class="cards-details-mdl">Prathik Gadde</span><span class="cards-details-rht">03/2017</span></a></li>
+            
+            <li><a href="#"><input name="xxx" type="radio" value="" style="margin:3px 5px 0 5px; float:left;" /><img src="images/visa-card-icon.png" align="left" border="0" /><span class="cards-details-lft"><strong>Visa</strong> ending in 5069</span> <span class="cards-details-mdl">Prathik Gadde</span><span class="cards-details-rht">03/2017</span></a></li>
+            
+        </ul>
+        
+        <div class="card-details-heading">
+            	<h5>Your available balance</h5>
+            </div>
+            
+            <ul>
+            	<li class="li"><input name="" type="checkbox" value="" style="margin-right:5px;" />Use your <strong>$71.80 gift card or promotional balance</strong></li>
+                <li class="li-inr" style="list-style-type:disc;">$71.80 Gift card balance</li>
+            </ul>
+        
+    </div>
+    
+    
+    <div class="more-payment-options">
+    
+    	<h4>More Payment Options</h4>
+        
+        <ul>
+        	<li><h6>Credit or Debit cards</h6>
+            <p>Webnextar accepts all major credit and debit cards:
+            <a href="#"><img src="images/arrow-lft-icon.png" align="left" border="0" style="margin-right:5px; float:left; margin-top:5px;" />Add a card</a></p><img src="images/all-debit-cards-img.png" align="right" border="0" alt="" title="" /></li>
+            
+            <li><h6>Gift card and Promotional Codes</h6>
+            <p><a href="#"><img src="images/arrow-lft-icon.png" align="left" border="0" style="margin-right:5px; float:left; margin-top:5px;" />Enter a gift card or promotional code</a></p><img src="images/amazon-card.png" align="right" border="0" alt="" title="" /></li>
+            
+            <li><h6>Webnextar.com store card</h6>
+            <p><a href="#"><img src="images/arrow-lft-icon.png" align="left" border="0" style="margin-right:5px; float:left; margin-top:5px;" />Learn more and apply now</a></p><img src="images/amazon-card.png" align="right" border="0" alt="" title="" /></li>
+            
+            <li><h6>Checking Acocunt</h6>
+            <p>Use your US based acocunt<a href="#"><img src="images/arrow-lft-icon.png" align="left" border="0" style="margin-right:5px; float:left; margin-top:5px;" />Add a checking account</a></p><img src="images/amazon-card.png" align="right" border="0" alt="" title="" /></li>
+        </ul>
+    
+    </div>
+    
+    </div>
+    
+    
+    <div class="payment-method-right">    
+        <div class="order-review">
+            <a href="place-order.html" class="continue-btn1">Continue</a>
+            <p>You can review this order before its final.</p>
+        </div>
+        
+        
+        
+        
+        <div class="order-review" style="margin-top:670px;">
+            <a href="place-order.html" class="continue-btn1">Continue</a>
+            <p>You can review this order before its final.</p>
+        </div>
+    
+    </div>
+    
+    
+
+
+
+
+
+</div>
+</body>
+</html>

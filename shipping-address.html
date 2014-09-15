@@ -1,0 +1,173 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Shipping Address</title>
+
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<script>
+localStorage.currentpage=window.location;
+$(document).ready(function() {
+			if(localStorage.getItem('signinid')==null)
+			{
+				window.location="signin.html";
+			}
+});
+</script>
+<script src="js/ourscript.js"></script>
+</head>
+
+<body>
+<div id="wrpapper">
+
+	<!-- Header Start -->
+	<div class="header">
+    	<div class="signin-logo"><img src="images/logo.png" align="left" border="0" alt="Logo" title="Logo" /></div>
+            
+        <div class="nav">
+            	<ul>
+                	<li><a href="signin.html">Signin</a></li>
+                    <li><a class="active" href="#">Shipping & Payment</a></li>
+                    <li><a href="#">Gift Options</a></li>
+                    <li><a href="#">Place Order</a></li>
+                </ul>
+            </div>
+        
+    </div>
+    <!-- Header End -->
+    
+    
+	<!-- Shipping Address Start -->
+    <div class="shipping-addres">
+    	<h2>Select a shipping address</h2>
+        <p>Is the address you'd like to use displayed below? If so, click the corresponding "Ship to this address" button. Or you can <span>enter a new shipping address.</span></p>
+        
+        <div class="addrs">
+        	<p><strong>Prathik Gadde</strong><br />
+			719 Indiana Eve Ste 319<br />
+            Indianpolis, In 46202-6149<br />
+            United States<br />
+            Phone: 98025 42922</p>
+            
+            <p><a href="shipping-options.html">Ship to this address</a></p>
+            
+            <span><a href="#" class="edit">Edit</a></span><span><a class="edit" href="#">Delete</a></span>
+        
+        </div>
+        
+        <div class="addrs">
+        	<p><strong>Prathik Gadde</strong><br />
+			719 Indiana Eve Ste 319<br />
+            Indianpolis, In 46202-6149<br />
+            United States<br />
+            Phone: 98025 42922</p>
+            
+            <p><a href="shipping-options.html">Ship to this address</a></p>
+            
+            <span><a href="#" class="edit">Edit</a></span><span><a class="edit" href="#">Delete</a></span>
+        
+        </div>
+        
+        <div class="addrs">
+        	<p><strong>Prathik Gadde</strong><br />
+			719 Indiana Eve Ste 319<br />
+            Indianpolis, In 46202-6149<br />
+            United States<br />
+            Phone: 98025 42922</p>
+            
+            <p><a href="shipping-options.html">Ship to this address</a></p>
+            
+            <span><a href="#" class="edit">Edit</a></span><span><a class="edit" href="#">Delete</a></span>
+        
+        </div>
+        
+        <div class="addrs">
+        	<p><strong>Prathik Gadde</strong><br />
+			719 Indiana Eve Ste 319<br />
+            Indianpolis, In 46202-6149<br />
+            United States<br />
+            Phone: 98025 42922</p>
+            
+            <p><a href="shipping-options.html">Ship to this address</a></p>
+            
+            <span><a href="#" class="edit">Edit</a></span><span><a class="edit" href="#">Delete</a></span>
+        
+        </div>
+        
+        <div class="addrs">
+        	<p><strong>Prathik Gadde</strong><br />
+			719 Indiana Eve Ste 319<br />
+            Indianpolis, In 46202-6149<br />
+            United States<br />
+            Phone: 98025 42922</p>
+            
+            <p><a href="shipping-options.html">Ship to this address</a></p>
+            
+            <span><a href="#" class="edit">Edit</a></span><span><a class="edit" href="#">Delete</a></span>
+        
+        </div>
+        
+        <div class="addrs">
+        	<p><strong>Prathik Gadde</strong><br />
+			719 Indiana Eve Ste 319<br />
+            Indianpolis, In 46202-6149<br />
+            United States<br />
+            Phone: 98025 42922</p>
+            
+            <p><a href="shipping-options.html">Ship to this address</a></p>
+            
+            <span><a href="#" class="edit">Edit</a></span><span><a class="edit" href="#">Delete</a></span>
+        
+        </div>
+        
+    </div>
+    <!-- Shipping Address End -->
+    
+    
+    <!-- Add a New Address Start -->
+    <div class="add-a-new-addrs">
+    	
+        <h5>Add a new address</h5>
+        <p>Be sure to click "Ship to this address" when done.</p>
+        
+        <ul>
+        	<li><span>Full Name :</span><input name="" type="text" placeholder="Full name" /></li>
+            <li><span>Address Line1 : </span><input name="" type="text" placeholder="Street Address1" /></li>
+            <li><span>Address Line2 : </span><input name="" type="text" placeholder="Street Address1"/></li>
+            <li><span>City : </span><input name="" type="text" placeholder="City"/></li>
+            <li><span>State/Province/Region : </span><input name="" type="text" placeholder="State/Province/Region"/></li>
+            <li><span>ZIP :</span><input name="" type="text" placeholder="ZIP" /></li>
+            <li><span>Country : </span><select><option>India</option><option>United States</option></select></li>
+            <li><span>Phone Number : <small>(Learn more)</small></span><input name="" type="text" /></li>
+            <h5>Optional Delivery Preferences <small>(Whats this?)<small></h5>
+            <li><span>Address Type :</span><select><option>Addrs Type</option><option>Addrs Type1</option></select></li>
+            <li><span>Security Access Code : </span><input name="" type="text" placeholder="For buildings or gated communities" /></li>
+            
+            <li><span></span><input name="submit" type="submit" class="ship-btn" value="Ship to this address" /></li>
+            
+            <li><span>Address Accuracy</span>Make sure you get your stuff! I f the address is not entered correcly, your package may be returned as undeliverable. You would then have to place a new order. Save time and avoooid frustration by entewring the address information in the appropriate boxes and double-checking for types and other errors. Need help?</li>
+            
+            <li><span>Click for Address Tips :</span><a href="#">General Address Tips</a><br />
+<a href="#">APO/FPO Address Tips</a></li>
+
+        </ul>
+        
+    </div>
+    <!-- Add a New Address End -->
+    
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

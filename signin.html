@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Signin</title>
+<script src="js/jquery-1.11.0.min.js"></script>
+<link href="css/stylesheet.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+<div id="wrpapper">
+
+	<!-- Header Start -->
+	<div class="header">
+		<div class="signin-logo"><img src="images/logo.png" align="left" border="0" alt="Logo" title="Logo" /></div>
+            
+		<div class="nav">
+            	<ul>
+                	<li><a class="active" href="#">Signin</a></li>
+                    <li><a href="shipping-address.html">Shipping & Payment</a></li>
+                    <li><a href="#">Gift Options</a></li>
+                    <li><a href="#">Place Order</a></li>
+                </ul>
+            </div>        
+    </div>
+    <!-- Header End -->
+    
+    
+    <div class="sign-in">
+    	
+		<h2>Sign In</h2><span style="color: red; float:left;" id="validation_err">&nbsp;</span>
+        
+        <ul>
+        	<li><span>Enter Your E-Mail Address</span><input class="sign-in-ul-li-input" name="" type="text" placeholder="E-Mail" id="sign-in-email"/></li>
+            <li><span>&nbsp;</span><p><input name="custtype" type="radio" value="" />I am a new customer. <span>(You'll create a password later)</span></p></li>
+            <li><span>&nbsp;</span><p><input name="custtype" type="radio" value="" checked/>I am returning customer, and my password is:</p></li>
+            <li><span>&nbsp;</span><input name="Password" type="password" placeholder="Password" class="sign-in-ul-li-input" id="sign-in-pass"/></li>
+            <li><span>&nbsp;</span><a href="#" id="sign_in_btn"><img src="images/sign_in_btn.png" align="left" border="0" /></a></li>
+            <li><span>&nbsp;</span><a href="#">Forgot your password? Click here</a></li>
+            <li><span>&nbsp;</span><a href="#">Has your e-mail address changed since your last order?</a></li>
+            <li><span>&nbsp;</span></li>
+        </ul>
+        
+    </div>
+    <script>
+	$(document).ready(function() {
+        $('#sign_in_btn').click(function(e) {
+			var error=false;
+            e.preventDefault();
+			var sign_in_email=$('#sign-in-email').val();
+			var sign_in_pass=$('#sign-in-pass').val();
+			if(sign_in_email=='')
+			{
+				$('#sign-in-email').css('borderColor','red');
+				error=true;
+			}
+			else
+			{
+				$('#sign-in-email').removeAttr('style');
+			}
+			if(sign_in_pass=='')
+			{
+				$('#sign-in-pass').css('borderColor','red');
+				error=true;
+			}
+			else
+			{
+				$('#sign-in-pass').removeAttr('style');
+			}
+			if(localStorage.getItem('currentpage')==null)
+			{
+				localStorage.currentpage='index.html';
+			}
+			if(!error)
+			{
+				if(sign_in_email=="bhupala.suresh@gmail.com" && sign_in_pass=="suresh123")
+				{
+					localStorage.signinid="Suresh";
+					window.location='index.html';
+				}
+				else if(sign_in_email=="pratheek.gadde@gmail.com" && sign_in_pass=="pratheek123")
+				{
+					localStorage.signinid="Pratheek";
+					window.location='index.html';
+				}
+				else if(sign_in_email=="ykc@gmail.com" && sign_in_pass=="chiatu123")
+				{
+					localStorage.signinid="Chaitu";
+					window.location='index.html';
+				}
+				else
+				{
+					$('#validation_err').html("Invalid user name or password.");
+				}
+			}
+        });
+    });
+	</script>
+</div>
+</body>
+</html>
